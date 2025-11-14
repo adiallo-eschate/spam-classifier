@@ -17,6 +17,8 @@ This project builds a machine learning model to classify emails as spam or not s
 
 - `spam_classifier.ipynb`: Main notebook with code and explanations
 - `README.md`: Project documentation
+- `clean_dataset.csv`: The dataset after normalization and preprocessing
+- `parse_email.py`: python code used to preprocess the spam assassin dataset
 
 # How to Run
 
