@@ -58,20 +58,19 @@ def load_emails_from_dir(directory, label):
     return data
 
 
-#print(load_emails_from_dir(r"C:\Users\abdou\Desktop\games\example", 0))
-
-spam = load_emails_from_dir(r"C:\Users\abdou\Downloads\spam_assassin\spam_2\spam_2", 1)
-easy_ham = load_emails_from_dir(r"C:\Users\abdou\Downloads\spam_assassin\easy_ham\easy_ham",0)
-hard_ham = load_emails_from_dir(r"C:\Users\abdou\Downloads\spam_assassin\hard_ham\hard_ham",0)
+spam = load_emails_from_dir(r"path_to_spam_directory_here", 1)
+easy_ham = load_emails_from_dir(r"path_to_ham_directory_here",0)
+hard_ham = load_emails_from_dir(r"path_to_hard_ham_directory_here",0)
 
 data = spam + easy_ham
 full_data = data + hard_ham
 
 
-with open(r"C:\Users\abdou\Downloads\spam_assassin\clean_dataset.csv", 'w', newline='', encoding='utf-8') as f:
+with open(r"path_to_csv_file", 'w', newline='', encoding='utf-8') as f:
     writer = csv.writer(f)
     writer.writerow(['Text', 'Label'])
     writer.writerows(full_data)
+
 
 
 
