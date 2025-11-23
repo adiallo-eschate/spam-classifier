@@ -47,5 +47,3 @@ This project builds a machine learning model to classify emails as spam or not s
 - Use word embeddings (Word2Vec, GloVe)
 - Deploy with Flask or Streamlit
 
-
-Feel free to fork, star, or contribute!
